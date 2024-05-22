@@ -1,0 +1,429 @@
+body {
+    font-family: 'Roboto', serif;
+    margin: 0;
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    padding-top: 20px;
+    font: bold 20px/1.5 Helvetica, sans-serif;
+}
+
+nav {
+    display: none;
+    clear: both;
+    justify-content: center;
+    background: #333;
+    flex-direction: column;
+}
+
+nav a {
+    padding: 1.25em 1.5em;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.menu {
+    background: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    line-height: 2em;
+}
+
+.menu-toggle {
+    display: flex;
+}
+
+nav a:hover {
+    color: #ffcc66;
+}
+
+main {
+    text-align: justify;
+    width: 99%;
+    height: auto;
+    padding: 0px;
+    margin: 30px auto;
+    color: black;
+    background-color: white;
+    opacity: .9;
+}
+
+
+/*----------------------------------------------------Index Page Start----------------------------------------------------*/
+
+.slider {
+    margin-top: 1em;
+    width: 99%;
+    height: 250px;
+    background: url(1.jpg);
+    background-size: 100% 100%;
+    animation: slide 40s infinite;
+    box-shadow: 0px 0px 10px 2px #ffcc66;
+}
+
+@keyframes slide {
+    25% {
+        background: url(2.jpg);
+        background-size: 100% 100%;
+    }
+    50% {
+        background: url(3.jpg);
+        background-size: 100% 100%;
+    }
+    75% {
+        background: url(4.jpg);
+        background-size: 100% 100%;
+    }
+    100% {
+        background: url(1.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icategories {
+    width: 99%;
+    height: auto;
+    padding: 0px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px 2px #ffcc66;
+    color: black;
+    background-color: white;
+    opacity: .9;
+}
+
+ul {
+    list-style-type: none;
+    width: auto;
+}
+
+li img {
+    width: 99%;
+    height: 250px;
+    float: center;
+    margin: 0 0 0 0;
+    padding: 5 0em;
+}
+
+li p {
+    text-align: justify;
+}
+
+li {
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+/*----------------------------------------------------Index Page End----------------------------------------------------*/
+
+
+/*----------------------------------------------------Diet Page Start----------------------------------------------------*/
+
+.dbody {
+    background-color: rgb(196, 255, 225);
+}
+
+.dcategories {
+    width: 99%;
+    height: auto;
+    padding: 0px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px 2px rgb(120, 255, 185);
+    color: black;
+    background-color: white;
+    opacity: .9;
+}
+
+.bmitest {
+    width: 99%;
+    height: 300px;
+    float: center;
+    margin: 0 0 0 0;
+    padding: 5 0em;
+}
+
+.bmi {
+    color: black;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.bmiclass {
+    background-color: white;
+    display: inline-block;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 20px 5px rgb(155, 155, 155);
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input {
+    box-shadow: 1px 1px 3px 1px rgb(155, 155, 155);
+    width: 100%;
+    text-align: center;
+}
+
+.submit {
+    display: inline-block;
+    color: white;
+    background-color: rgb(44, 255, 146);
+    margin: 0;
+    margin-bottom: 1em;
+    padding: 5px;
+    border: 0;
+    font-weight: bold;
+    width: 100%;
+}
+
+.submit:hover {
+    color: black;
+    background-color: white;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+
+#result {
+    border: 1px solid black;
+    padding: 2px;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+h4 {
+    color: black;
+    text-shadow: -2px -2px 5px white;
+}
+
+
+/*----------------------------------------------------Diet Page End----------------------------------------------------*/
+
+
+/*----------------------------------------------------Weightlifting Page Start----------------------------------------------------*/
+
+.wbody {
+    background-color: #888;
+}
+
+.wcategories {
+    width: 99%;
+    height: auto;
+    padding: 0px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px 2px rgb(82, 82, 82);
+    color: black;
+    background-color: white;
+    opacity: .9;
+}
+
+.weights {
+    width: 99%;
+    height: 300px;
+    float: center;
+    margin: 0 0 0 0;
+    padding: 5 0em;
+}
+
+
+/* button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    opacity: 0.3;
+}
+
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+/* Collapsable */
+
+.collapsible {
+    background-color: #888;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+
+/* Workout Tables */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+/*----------------------------------------------------Weightlifting Page End----------------------------------------------------*/
+
+
+/*----------------------------------------------------Contact Us Page Start----------------------------------------------------*/
+
+.cbody {
+    background-color: rgb(228, 228, 228);
+}
+
+.ccategories {
+    width: 99%;
+    height: auto;
+    padding: 0px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 10px 2px rgb(202, 202, 202);
+    color: black;
+    background-color: white;
+    opacity: .9;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+
+/*----------------------------------------------------Contact Us Page End----------------------------------------------------*/
+
+
+/* TABLET STYLES */
+
+@media screen and (min-width: 500px) {
+    /* applies to screens wider than 499px */
+    body {
+        background: rgb(255, 255, 255);
+    }
+    .menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        background: white;
+        font-weight: bold;
+    }
+    /* just change the menu colours on hover above mobile widths */
+    nav a:hover {
+        color: #ffcc66;
+    }
+    .slider {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    li img {
+        width: 150px;
+        height: 150px;
+        float: left;
+        margin: 0 1em 0 0;
+        padding: 5 0em;
+    }
+}
+
+
+/* DESKTOP STYLES */
+
+@media screen and (min-width: 1000px) {
+    /* applies to screens wider than 999px */
+    body {
+        background-color: white;
+    }
+    .slider {
+        height: 400px;
+    }
+    .categories {
+        width: 60em;
+        height: auto;
+        padding: 0px;
+        margin: 30px auto;
+        box-shadow: 0px 0px 10px 2px #ffcc66;
+        color: black;
+        background-color: white;
+        opacity: .9;
+    }
+    ul {
+        list-style-type: none;
+        width: auto;
+    }
+    li img {
+        width: 15%;
+        height: 15%;
+        float: center;
+        margin: 0 1em 0 0;
+        padding: 5 0em;
+    }
+    li p {
+        text-align: justify;
+    }
+    li {
+        padding: 10px;
+        overflow: hidden;
+    }
+}
